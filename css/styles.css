@@ -1,0 +1,106 @@
+* {
+	margin:0;
+	padding: 0;
+	transition: all .2s;
+}
+body {
+/*	background-color: pink;*/
+	font-family: comic sans-serif, Helvetica, Arial, sans-serif;
+}
+#heading {
+	background-color: #c0cce4;  /* sky blue  */
+/*	font-size: 24px;*/
+}
+#nav {
+	padding-right: 50px;
+	padding-bottom: 5px;
+	text-align: right;
+}
+#nav li {
+	background-color: #c3dcf0;
+	display: inline-block;
+	margin-left: 100px;
+	margin-top: 10px;
+	border-radius: 5px;
+	padding: 5px 10px;
+	width: 100px;
+	text-align: center;
+}
+#heading a {
+	text-decoration: none;
+	font-size: 18px;
+	color: #800d29;
+}
+#heading a:hover,
+#booking a:hover {
+	font-weight: bold;
+}
+#heading a:active,
+#booking a:active {
+	font-size: x-large;
+}
+#heading:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+#company-logo {
+	background-color: lime;
+	padding-top: 15px;
+	padding-bottom: 5px;
+	display: block;
+}
+#company-logo img {
+	background-color: yellow;
+	width: 100px;
+	padding: 7px 0 5px 0;
+	float: left;
+}
+#company-logo h1 {
+	background-color: pink;
+	width: 70%;
+	margin-left: 10px;
+	padding: 7px 0 5px 0;
+	color: #800d29;     /*  Fly to the Limit text color */
+	font-size: 70px;
+ 	text-align: center;
+ 	letter-spacing: 14px;
+ 	float: left;
+}
+#contact-dtls {
+/*	background-color: green;*/
+	width: 14%;
+	font-size: 18px;
+	padding-bottom: 5px;
+	margin-right: 21px;
+	text-align: center;
+	letter-spacing: 3px;
+	float: right;
+}
+#contact-dtls ul {
+	list-style: none;
+}
+#company-logo:after {
+	content: '';
+	clear: both;
+	display: block;
+}
+main {
+	background: url(../photos/wanaka_pan.jpg);
+	background-size: cover;
+	height: 700px;
+	position: relative;
+}
+#booking {
+	background-color: #800d29;
+	color: white;
+	text-align: center;
+	width: 140px;
+	bottom: 14px;
+	right: 14px;
+	position: absolute;
+	padding: 20px;
+
+}
+
+
