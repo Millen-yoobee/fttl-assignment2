@@ -85,13 +85,34 @@ footer:after {
 	clear: both;
 	display: block;
 }
+
+
+		/*   DO NOT TOUCH THE CODES FROM HERE DOWN   */
+
 main {
 	background: url(../photos/wanaka_pan.jpg);
 	background-size: cover;
 	height: 700px;
 	position: relative;
+	display: block;
+}
+
+#aircraft {
+	background-color: yellow;
+	float: left;
 
 }
+
+#crew {
+	background-color: maroon;
+	float: right;
+
+}
+
+
+
+		/*   DO NOT TOUCH THE CODES FROM HERE DOWN   */
+
 #booking {
 	background-color: #800d29;
 	color: white;
@@ -105,44 +126,44 @@ main {
 #booking a {
 	color: white;
 }
-footer {
-/*	background-color: #237dc9;*/
+#footer {
+/*	padding-left: 0*/
 	background-color: #e6f0f8;
-/*	background-color: green;*/
-	color: #800d29;
-	display: block;
-	padding-top: 10px;
-	letter-spacing: 1px;
-	padding-right: 15px;
-	padding-bottom: 5px;
+	padding-bottom: 10px;
 	text-align: left;
-/*	margin: 0 15px 5px 15px;*/
 }
-footer ul {
-	list-style: none;
-}
-#policy {
-	float: left;
-}
-#address {
-	float: left;
-}
-#phone-email {
-	float: right;
-}
-footer a,
-#address,
-#phone-email {
-	background-color: #c3dcf0;  /*sky-blue */
-	margin-left: 10px;
-	border-radius: 5px;
-	width: 450px;
+#footer li {
+	background-color: #c3dcf0;
+	background-color: #d7e8f7;
 	display: inline-block;
+	margin-left: 20px;
+	margin-top: 7px;
+	border-radius: 5px;
+	padding: 2px;
 	text-align: center;
-	padding: 5px 0;
+	font-size: small;
+	color: #800d29;
 }
-footer a {
+#footer a {
 	text-decoration: none;
+	color: #800d29;
+	width: 230px;
 }
+#footer a {
+	width: 230px;
+}
+#queenstown {
+	width: 430px;
+/*	text-align: left;*/
+}
+#wanaka {
+	width: 450px;
+}
+#phone ,
+#email {
+	width: 180px;
+}
+
+
 
 
