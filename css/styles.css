@@ -230,13 +230,24 @@ article {
 	margin-bottom: 20px;
 
 }
-/*#article {
-	width: 150px
-	height: 30px;
-	overflow: scroll hidden;
-}*/
 
-		/*   DO NOT TOUCH THE CODES FROM HERE DOWN   */
+/*    STYLES FOR A BOOK A TOUR PAGE, from here down    */
+
+#book-main {
+	background-color: pink;
+	height: 700px;
+	position: relative;
+	display: block;
+}
+#book-main:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+
+
+/*   STYLES FOR "MAKE A BOOKING" PROMPT, ON ALL PAGES - FROM HERE DOWN   */
 
 #booking {
 	background-color: #800d29;
@@ -251,6 +262,11 @@ article {
 #booking a {
 	color: white;
 }
+
+
+/*   STYLES FOR FOOTERS  -  FROM HERE DOWN   */
+
+
 #footer {
 /*	padding-left: 0*/
 	background-color: #e6f0f8;
