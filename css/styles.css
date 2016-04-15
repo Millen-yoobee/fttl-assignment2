@@ -86,30 +86,155 @@ footer:after {
 	display: block;
 }
 
-
-		/*   DO NOT TOUCH THE CODES FROM HERE DOWN   */
-
-main {
+/*   main is the main body of the index html file   */
+#main {
 	background: url(../photos/wanaka_pan.jpg);
 	background-size: cover;
 	height: 700px;
 	position: relative;
 	display: block;
 }
+#main:after {
+	content: '';
+	display: block;
+	clear: both;
+}
 
+	/*   DO NOT TOUCH THE CODES FROM HERE UP   */
+
+
+
+/*  aircraft-main is the main body of the aircraft html file  */
+#aircraft-main {
+	background-color: #f1f9ff;
+	/*background-color: #feeef3;	*/
+	height: 700px;
+	position: relative;
+}
+#aircraft-main:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+h1 {
+	margin-top: 30px;
+	text-align: center;
+	color: #800d29;
+}
 #aircraft {
-	background-color: yellow;
+/*	background-color: teal;*/
 	float: left;
-
+	width: 45%;
+	height: 95%;
+	border: 2px solid #800d29;
+	margin-top: 15px;
+	margin-left: 20px;
+	padding: 5px;
+}
+#aircraft-thumbnails {
+	/*background-color: pink;*/
+	width: 97%;
+	display: inline-block;
+	margin-top: 15px;
+}
+#aircraft-1-3 a, 
+#aircraft-4-6 a {
+	margin: 5% 5%;
+	display: inline-block;
+	color: #800d29;
+}
+#aircraft-1-3 a, 
+#aircraft-4-6 a {
+	margin: 5%;
+	display: inline-block;
+	text-decoration: none;
+	color: #800d29;
+}
+#aircraft-1-3 a:hover, 
+#aircraft-4-6 a:hover {
+	font-weight: bold;
 }
 
-#crew {
-	background-color: maroon;
+#aircraft-1-3 {
+/*	background-color: pink;*/
+	width: 39%;
+	height: 100%;
+	margin-left: 5%;
+	margin-right: 5%;
+/*	border: 1px solid #800d29;*/
+	text-align: center;
+	float: left;
+}
+#aircraft-4-6 {
+/*	background-color: blue;*/
+	width: 39%;
+	height: 100%;
+	margin-left: 5%;
+	margin-right: 5%;
+/*	border: 1px solid #800d29;*/
+	text-align: center;
 	float: right;
-
+}
+#crew {
+/*	background-color: olive;*/
+	float: right;
+	width: 45%;
+	height: 95%;
+	border: 2px solid #800d29;
+	margin-top: 15px;
+	margin-right: 20px;
+	padding: 5px;
+}
+#crew-members {
+	/*background-color: yellow;*/
+	width: 97%;
+	display: inline-block;
+	margin-top: 15px;
+}
+h3 {
+	margin-top: 10px;
+	margin-bottom: 7px;
+	text-align: left;
+	font-style: italic;
+	color: #920e2e;
 }
 
+#crew-members p {
+	padding-bottom: 5px;
+		color: #800d29;
 
+}
+#crew-1-3 {
+	float: left;
+	width: 45%;
+	height: 30%;
+	margin-left: 25px;
+	margin-right: 5px;
+	padding-top: 
+}
+#crew-4-5 {
+	float: right;
+	width: 45%;
+	height: 30%;
+	margin-left: 5px;
+	margin-right: 25px;
+}
+article {
+	text-align: left;
+/*	padding-left: 10px*/;
+	margin-left: 25px;
+	margin-right: 25px;
+}
+#crew p {
+/*	border: 1px dashed #920e2e;*/
+	margin-bottom: 20px;
+
+}
+/*#article {
+	width: 150px
+	height: 30px;
+	overflow: scroll hidden;
+}*/
 
 		/*   DO NOT TOUCH THE CODES FROM HERE DOWN   */
 
@@ -119,7 +244,7 @@ main {
 	text-align: center;
 	width: 140px;
 	bottom: 14px;
-	right: 14px;
+	right: 30px;
 	position: absolute;
 	padding: 20px;
 }
@@ -129,15 +254,16 @@ main {
 #footer {
 /*	padding-left: 0*/
 	background-color: #e6f0f8;
-	padding-bottom: 10px;
+	padding-top: 5px;
+	padding-bottom: 15px;
 	text-align: left;
 }
 #footer li {
 	background-color: #c3dcf0;
-	background-color: #d7e8f7;
+/*	background-color: #d7e8f7;*/
 	display: inline-block;
-	margin-left: 20px;
-	margin-top: 7px;
+/*	margin-left: 20px; */  /*margin-left different for each li item */
+	margin-top: 10px;
 	border-radius: 5px;
 	padding: 2px;
 	text-align: center;
@@ -152,16 +278,22 @@ main {
 #footer a {
 	width: 230px;
 }
+#policy {
+	margin-left: 40px;
+}
 #queenstown {
 	width: 430px;
+	margin-left: 40px;
 /*	text-align: left;*/
 }
 #wanaka {
 	width: 450px;
+	margin-left: 40px;
 }
 #phone ,
 #email {
 	width: 180px;
+	margin-left: 40px;
 }
 
 
