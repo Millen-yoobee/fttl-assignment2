@@ -86,7 +86,7 @@ footer:after {
 	display: block;
 }
 
-/*   main is the main body of the index html file   */
+/*   STYLES FOR THE HOME PAGE/INDEX FILE    */
 #main {
 	background: url(../photos/wanaka_pan.jpg);
 	background-size: cover;
@@ -100,15 +100,42 @@ footer:after {
 	clear: both;
 }
 
-	/*   DO NOT TOUCH THE CODES FROM HERE UP   */
 
 
+/*    STYLES FOR A BOOK A TOUR PAGE, from here down    */
 
-/*  aircraft-main is the main body of the aircraft html file  */
+#book-main {
+	background-color: pink;
+	height: 700px;
+	position: relative;
+	display: block;
+}
+#book-main:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+
+/*   STYLES FOR THE MAIN BODY OF THE "RATES" PAGE  */
+#rates-main {
+	background-color: teal;
+	height: 700px;
+	position: relative;
+	display: block;
+}
+#rates-main:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+
+/*  STYLES FOR THE AIRCRAFT SECTION OF THE AIRCRAFT/CREW PAGE */
 #aircraft-main {
 	background-color: #f1f9ff;
 	/*background-color: #feeef3;	*/
-	height: 700px;
+/*	height: 700px;*/
 	position: relative;
 }
 #aircraft-main:after {
@@ -179,7 +206,7 @@ h1 {
 /*	background-color: olive;*/
 	float: right;
 	width: 45%;
-	height: 95%;
+/*	height: 95%;*/
 	border: 2px solid #800d29;
 	margin-top: 15px;
 	margin-right: 20px;
@@ -226,25 +253,22 @@ article {
 	margin-right: 25px;
 }
 #crew p {
-/*	border: 1px dashed #920e2e;*/
 	margin-bottom: 20px;
-
 }
 
-/*    STYLES FOR A BOOK A TOUR PAGE, from here down    */
 
-#book-main {
-	background-color: pink;
+/*/*   STYLES FOR "TESTIMONIALS" PAGE, from here down   */
+#testimonials-main {
+	background-color: teal;
 	height: 700px;
 	position: relative;
 	display: block;
 }
-#book-main:after {
+#testimonials-main:after {
 	content: '';
 	display: block;
 	clear: both;
 }
-
 
 
 /*   STYLES FOR "MAKE A BOOKING" PROMPT, ON ALL PAGES - FROM HERE DOWN   */
@@ -273,6 +297,7 @@ article {
 	padding-top: 5px;
 	padding-bottom: 15px;
 	text-align: left;
+	clear: both;
 }
 #footer li {
 	background-color: #c3dcf0;
