@@ -119,16 +119,70 @@ footer:after {
 
 /*   STYLES FOR THE MAIN BODY OF THE "RATES" PAGE  */
 #rates-main {
-	background-color: teal;
+	background-color: #6793b8;
+/*	background-color: #7698b4;*/
 	height: 700px;
 	position: relative;
 	display: block;
+	color: #800d29;
 }
 #rates-main:after {
 	content: '';
 	display: block;
 	clear: both;
 }
+#tours-rates {
+/*	background-color: pink;*/
+	display: block;
+}
+#tours-rates:after {
+	content: '';
+	display: block;
+	clear: both;	
+}
+#tours caption, 
+#rates caption {
+	text-align: left;
+	font-size: x-large;
+}
+#tours {
+/*	background-color: red;*/
+	width: 40%;
+	margin-top: 30px;
+	margin-left: 70px;
+	font-size: large;
+	display: block;
+	float: left;
+}
+#tours tr,
+#rates tr {
+	/*	background-color: blue;*/
+	height: 35px;
+}
+.type-col {
+	width: 160px;
+	text-align: center;
+}
+
+.fa {
+	padding-left: 45%;
+}
+#rates {
+/*	background-color: orange;*/
+	width: 40%;
+	margin-top: 30px;
+	margin-right: 70px;
+	font-size: large;
+	display: block;
+	float: right;
+}
+.rates-col {
+	width: 300px;
+}
+#rates td {
+	padding-left: 20%;
+}
+
 
 
 /*  STYLES FOR THE AIRCRAFT SECTION OF THE AIRCRAFT/CREW PAGE */
@@ -143,7 +197,8 @@ footer:after {
 	display: block;
 	clear: both;
 }
-h1 {
+#aircraft h1,
+#crew h1 {
 	margin-top: 30px;
 	text-align: center;
 	color: #800d29;
@@ -164,12 +219,7 @@ h1 {
 	display: inline-block;
 	margin-top: 15px;
 }
-#aircraft-1-3 a, 
-#aircraft-4-6 a {
-	margin: 5% 5%;
-	display: inline-block;
-	color: #800d29;
-}
+
 #aircraft-1-3 a, 
 #aircraft-4-6 a {
 	margin: 5%;
@@ -183,22 +233,23 @@ h1 {
 }
 
 #aircraft-1-3 {
-/*	background-color: pink;*/
+	/*	background-color: pink;*/
+	/*	border: 1px solid #800d29;*/
 	width: 39%;
 	height: 100%;
 	margin-left: 5%;
 	margin-right: 5%;
-/*	border: 1px solid #800d29;*/
 	text-align: center;
 	float: left;
 }
 #aircraft-4-6 {
-/*	background-color: blue;*/
+	/*	background-color: blue;*/
+	/*	border: 1px solid #800d29;*/
 	width: 39%;
 	height: 100%;
 	margin-left: 5%;
 	margin-right: 5%;
-/*	border: 1px solid #800d29;*/
+
 	text-align: center;
 	float: right;
 }
@@ -218,8 +269,8 @@ h1 {
 	display: inline-block;
 	margin-top: 15px;
 }
-h3 {
-	margin-top: 10px;
+#crew h3 {
+	padding-top: 10px;
 	margin-bottom: 7px;
 	text-align: left;
 	font-style: italic;
