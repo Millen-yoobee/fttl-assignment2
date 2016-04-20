@@ -42,27 +42,147 @@
 
 		<div id="book-main">
 
-			<h3> Please select the type of tour and type of aircraft by selecting (clicking on) the appropriate buttons for your choice. Enter your contact details and finally, click on the Send button.</h3>
+			<div id="booking-instructions">
+				<h3>Please select the type of tour and type of aircraft by selecting (clicking on) the appropriate buttons for your choice. Enter your contact details and finally, click on the Send button. </h3>
+				
+				<h3>We’ll get back to you within 24 hours, to confirm your booking and process your payment. </h3>
+			</div>	
 
-			<h3> We’ll get back to you within 24 hours, to confirm your booking and process your payment. </h3>
+	<!-- 			<div id="col-stubs">
+						<label id="stub1" class="stub">Tour and service type </label> 
+						<label class="stub">Number of passengers</label>
+						<label class="stub">Type of aircraft</label>
+						<label class="stub">Date / time </label>
+						<label class="stub">Pick-up place </label>
+						<label class="stub">Delivery place </label>
+						<label class="stub">Drop-off place </label>
+					</div>
+ -->
 
+				<form action="register.php" method="post" >
 
+					<div class="glider-flight">
+						<fieldset> Glider flights</fieldset>
+						<div class="glider-group">
+							<label for="number-gliders">Number of gliders</label>
+							<input type="number" name="number-of-gliders" id="number-gliders" value="" min="0" max="9">
+						</div>
+						<div class="glider-group">
+							<label for="glider-date">Date</label>
+							<input type="date" name="glide-date" id="glider-date" value="">
+						</div>
+						<div class="glider-group">
+							<label for="glider-hours">Number of hours (we recommend 3 hours)</label>
+							<input type="number" name="glider-num-hours" id="glider-hours" value="" min="0" max="3">
+						</div>
+					</div>
 
+					<div class="sightseeing">
+						<fieldset> Sightseeing flights</fieldset>
+						<div class="sightseeing-group">
+							<label for="sightseeing-type">Type of sightseeing </label>
+							<select name="flight-type" id="sightseeing-type">
+								<option value=""> Please select ... </option>
+								<option value="1hour">One-hour scenic flight</option>
+								<option value="2hour">Two-hour scenic flight</option>
+								<option value="standard"> Standard flight </option>
+							</select>
+						</div>
+						<div class="sightseeing-group">
+							<label for="sightseeing-date">Date</label>
+							<input type="date" name="sight-date" id="sightseeing-date" value="">
+						</div>
 
+						<div class="sightseeing-group">
+							<label for="aircraft-type">Type of aircraft </label>
+							<select name="craft-type" id="aircraft-type">
+								<option value=""> Please select ... </option>
+								<option value="fixed">Fixed wing</option>
+								<option value="heli">Helicopter</option>
+							</select>
+						</div>
+						<div class="sightseeing-group">
+							<label for="number-sightseers">Number of passengers</label>
+							<input type="number" name="number-of-sightseers" id="number-sightseers" value="" min="0" max="12">
+						</div>
 
+					</div>
 
+					<div class="charters">
+						<fieldset> Charters and provisioning services</fieldset>
+						<div class="charters-group">
+							<label for="charter-type">Type of service </label>
+							<select name="chart-type" id="charter-type">
+								<option value=""> Please select ... </option>
+								<option value="charter">Charter</option>
+								<option value="provisioning">Provisioning service</option>
+							</select>
+						</div>
+						<div class="charters-group">
+							<label for="charters-date">Date</label>
+							<input type="date" name="chart-date" id="charters-date" value="">
+						</div>
+						<div class="charters-group">
+							<label for="charter-place">Drop-off place</label>
+							<textarea name="charter-drop-place" id="charter-place" value=""cols="50" rows="0"> </textarea>
+						</div>
+					</div>
+					<div class="deliveries">
+						<fieldset> Deliveries and pick-ups</fieldset>
+						<div class="deliveries-group">
+							<label>Delivery service :     </label>
+							<label for="deliveries-date">Date</label>
+							<input type="date" name="deliver-date" id="deliveries-date" value="">
+						</div>
+						<div class="deliveries-group">
+							<label for="deliveries-place">Delivery place</label>
+							<textarea name="deliveries-drop-place" id="deliveries-place" value=""cols="50" rows="0"> </textarea>
+						</div>
+
+						<div class="pickup">
+							<div class="deliveries-group">
+								<label>Pick-up service :     </label>
+								<label for="pickup-date">Date</label>
+								<input type="date" name="pick-date" id="pickup-date" value="">
+							</div>
+							<div class="deliveries-group">
+								<label for="pickup-place">Pick-up place</label>
+								<textarea name="pick-place" id="pickup-place" value=""cols="50" rows="0"> </textarea>
+							</div>
+						</div>
+					</div>
+					<div class="customer">
+						<fieldset> Customer contact details			</fieldset>
+						<div class="customer-group">
+							<label for="fullname">Full name</label>
+							<input type="text" name="fname" id="fullname" value="">
+						</div>
+						<div class="customer-group">
+							<label for="email">Email</label>
+							<input type="text" name="e-mail" id="email" value="">
+						</div>
+						<div class="customer-group">
+							<label for="landline">Telephone (landline)</label>
+							<input type="number" name="tel" id="landline" value="">
+						</div>
+						<div class="customer-group">
+							<label for="mobile">Mobile number</label>
+							<input type="number" name="mob" id="mobile" value="">
+						</div>
+					</div>
 
 <!--    Make a booking promt below, codes common to all web pages    -->
-			<div id="booking">
+<!-- 			<div id="booking">
 				<p>Make a booking</p>
 				<p>now! </p>
 				<br>
 				<a href="book.html"> Book online &gt;&nbsp;&gt;&nbsp;&gt;</a>
-			</div>    <!--   end of codes for the "BOOK A TOUR" promt    -->
-
+			</div>   -->  <!--   end of codes for the "BOOK A TOUR" promt    -->
+				<input id="submit-button" type="submit" value="Submit booking">
+			</form>
 		</div>     <!--    close tag of book-main    -->
 
-<!--     Footer from here down; all codes common to all web pages.     -->
+<!--   Footer from here down; all codes common to all web pages.   -->
 		<div id="footer">		
 			<ul>
 				<li id="policy"> 
