@@ -141,9 +141,25 @@ fieldset {
 label {
 	margin-right: 15px;
 }
+#number-gliders-message, #glider-date-message, #glider-hours-message,
+#glider-group-message, 
+#sightseeing-type-message, #sightseeing-date-message, #aircraft-type-message, 
+#number-sightseers-message,#sightseeing-group-message,
+#charter-type-message, #charter-date-message, #charter-place-message,
+#charter-group-message,
+#delivery-date-message, #delivery-place-message, #delivery-group-message,
+#pickup-date-message, #pickup-place-message, #pickup-group-message, 
+#firstname-message, #surname-message, #email-message, 
+#landline-message, #mobile-message, #customer-message
+{
+	font-weight: bold;
+	font-size: large;
+	color: red;
+}
+
 .glider-group,  .sightseeing-group,
-.charter-group,  .delivery-group,
-.customer-group {
+.charter-group, .delivery-group,
+.pickup-group,  .customer-group {
 	display: inline-table;
 	margin-bottom: 10px;
 	margin-right: 15px;

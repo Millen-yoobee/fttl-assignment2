@@ -54,19 +54,24 @@
 					<fieldset> Glider flights</fieldset>
 					<div class="glider-group">
 						<label for="number-gliders">Number of gliders</label>
-						<input type="number" name="number-of-gliders" id="number-gliders" value="" min="0" max="9">
+						<input type="number" name="number-of-gliders" id="number-gliders" min="1" max="9">
+						<span id="number-gliders-message"></span>
 					</div>
 					<div class="glider-group">
 						<label for="glider-date">Date</label>
 						<input type="date" name="glide-date" id="glider-date" value="">
+						<span id="glider-date-message"></span>
 					</div>
 					<div class="glider-group">
 						<label for="glider-hours">Number of hours (we recommend 3 hours)</label>
-						<input type="number" name="glider-num-hours" id="glider-hours" value="" min="0" max="3">
+						<input type="number" name="glider-num-hours" id="glider-hours" value="" min="1" max="3">
+						<span id="glider-hours-message"></span>
 					</div>
+					<span id="glider-group-message"></span>
 				</div>
 
 				<div class="sightseeing">
+
 					<fieldset> Sightseeing flights</fieldset>
 					<div class="sightseeing-group">
 						<label for="sightseeing-type">Type of sightseeing </label>
@@ -76,10 +81,13 @@
 							<option value="2hour">Two-hour scenic flight</option>
 							<option value="standard"> Standard flight </option>
 						</select>
+						<span id="sightseeing-type-message"></span>
 					</div>
+
 					<div class="sightseeing-group">
 						<label for="sightseeing-date">Date</label>
 						<input type="date" name="sight-date" id="sightseeing-date" value="">
+						<span id="sightseeing-date-message"></span>
 					</div>
 
 					<div class="sightseeing-group">
@@ -89,11 +97,15 @@
 							<option value="fixed">Fixed wing</option>
 							<option value="heli">Helicopter</option>
 						</select>
+						<span id="aircraft-type-message"></span>
 					</div>
+
 					<div class="sightseeing-group">
 						<label for="number-sightseers">Number of passengers</label>
 						<input type="number" name="number-of-sightseers" id="number-sightseers" value="" min="0" max="12">
+						<span id="number-sightseers-message"></span>
 					</div>
+					<span id="sightseeing-group-message"></span>
 				</div>
 
 				<div class="charter">
@@ -102,18 +114,22 @@
 						<label for="charter-type">Type of service </label>
 						<select name="chart-type" id="charter-type">
 							<option value=""> Please select ... </option>
-							<option value="charter">Charter</option>
-							<option value="provisioning">Provisioning service</option>
+							<option >Charter</option>
+							<option >Provisioning service</option>
 						</select>
+						<span id="charter-type-message"></span>
 					</div>
 					<div class="charter-group">
 						<label for="charter-date">Date</label>
 						<input type="date" name="chart-date" id="charter-date" value="">
+						<span id="charter-date-message"></span>
 					</div>
 					<div class="charter-group">
 						<label for="charter-place">Drop-off place</label>
 						<textarea name="charter-drop-place" id="charter-place" value=""cols="50" rows="0"> </textarea>
+						<span id="charter-place-message"></span>
 					</div>
+					<span id="charter-group-message"></span>
 				</div>
 
 				<div class="delivery">
@@ -121,47 +137,59 @@
 					<div class="delivery-group">
 						<label>Delivery service :     </label>
 						<label for="delivery-date">Date</label>
-						<input type="date" name="deliver-date" id="delivery-date" value="">
-					</div>
+						<input type="date" name="deliver-date" id="delivery-date">
+						<span id="delivery-date-message"></span>
+ 					</div>
 					<div class="delivery-group">
 						<label for="delivery-place">Delivery place</label>
-						<textarea name="delivery-drop-place" id="delivery-place" value=""cols="50" rows="0"> </textarea>
+						<textarea name="delivery-drop-place" id="delivery-place" cols="50" rows="0"> </textarea>
+						<span id="delivery-place-message"></span>
 					</div>
+						<span id="delivery-group-message"></span>
 
 					<div class="pickup">
-						<div class="delivery-group">
+						<div class="pickup-group">
 							<label>Pick-up service :     </label>
 							<label for="pickup-date">Date</label>
-							<input type="date" name="pick-date" id="pickup-date" value="">
-					</div>
-					<div class="delivery-group">
+							<input type="date" name="pick-date" id="pickup-date">
+							<span id="pickup-date-message"></span>
+						</div>
+						<div class="pickup-group">
 							<label for="pickup-place">Pick-up place</label>
 							<textarea name="pick-place" id="pickup-place" value=""cols="50" rows="0"> </textarea>
+							<span id="pickup-place-message"></span>
 						</div>
+						<span id="pickup-group-message"></span>
 					</div>
 				</div>
+
 				<div class="customer">
 					<fieldset> Customer contact details			</fieldset>
 					<div class="customer-group">
 						<label for="firstname">First name</label>
 						<input type="text" name="fname" id="firstname" value="">
+						<span id="firstname-message"></span>				
 					</div>
 					<div class="customer-group">
 						<label for="surname">Surname</label>
 						<input type="text" name="sname" id="surname" value="">
+						<span id="surname-message"></span>	
 					</div>
 					<div class="customer-group">
 						<label for="email">Email</label>
 						<input type="text" name="e-mail" id="email" value="">
+						<span id="email-message"></span>				
 					</div>
 					<div class="customer-group">
 						<label for="landline">Telephone (landline)</label>
 						<input type="number" name="tel" id="landline" value="">
+						<span id="landline-message"></span>				
 					</div>
 					<div class="customer-group">
 						<label for="mobile">Mobile number</label>
 						<input type="number" name="mob" id="mobile" value="">
 					</div>
+					<span id="customer-message"></span>				
 				</div>
 
 <!--    Make a booking promt below, codes common to all web pages    -->
